@@ -1,0 +1,24 @@
+{
+ "key": "naruto",
+ "title": "NARUTO",
+ "series_name": "Naruto dalam 200 Detik",
+ "music_mood": "seru",
+ "style": "Original cute parody cartoon style of my own: chubby chibi characters about two heads tall with oversized round heads, small solid black bean-shaped eyes, soft pink blush circles on the cheeks, tiny simple mouths, thick clean dark-brown outlines, flat pastel colors with one soft cel-shade tone, simple rounded background shapes, slightly wobbly hand-drawn lines, playful exaggerated comedic poses and expressions. Vertical 9:16 composition, main subject large in the middle third, calm empty space at the top and the bottom of the frame. No text, no letters, no speech bubbles, no captions, no watermark, no logos, no borders.",
+ "characters": {
+  "naruto": "a small energetic boy with spiky bright yellow hair, three thin whisker lines on each cheek, wearing an orange tracksuit with dark blue shoulders and a blue cloth headband with a small metal plate",
+  "naruto_bayi": "a tiny chubby baby with a tuft of yellow hair and three thin whisker lines on each cheek, wrapped in a white cloth",
+  "iruka": "a kind young male teacher with a dark brown high ponytail, a horizontal scar across his nose, wearing a green flak vest over a navy outfit and a blue headband with a metal plate",
+  "hokage3": "a short old man with a white goatee and wrinkles, wearing a big wide straw-and-red pointed village leader hat and white-and-red robes, holding a smoking pipe",
+  "minato": "a tall young man with spiky bright yellow hair and kind blue eyes, wearing a long white cloak with red flame patterns at the hem over a green vest",
+  "kyuubi": "a gigantic fierce orange fox monster with nine huge swishing tails, red eyes and sharp teeth, drawn in the same cute chibi style but menacing",
+  "mizuki": "a sneaky young male teacher with long straight light-blue-silver hair, wearing a green flak vest and carrying a giant four-bladed throwing star on his back",
+  "warga": "grumpy chibi villagers in simple traditional Japanese-style clothes",
+  "sasuke": "a cool brooding boy with spiky dark navy-black hair, wearing a dark blue high-collar shirt with white shorts and a blue headband with a metal plate",
+  "sakura": "a cheerful girl with shoulder-length pink hair and a wide forehead, wearing a red sleeveless dress over dark shorts and a blue headband as a hair band",
+  "kakashi": "a lazy tall man with messy spiky silver hair slanted to one side, a dark mask covering his lower face, his headband tilted over his left eye, wearing a green flak vest, often reading a small orange book"
+ },
+ "episodes": [
+  {"ep": 1, "title": "Bocah Rubah Ekor Sembilan", "beats": "Kyuubi menyerang Konoha; Hokage ke-4 (Minato) menyegel Kyuubi ke dalam bayi Naruto dan gugur; Naruto tumbuh sendirian, dikucilkan warga, jadi bocah iseng (mencoret patung wajah Hokage) yang bermimpi jadi Hokage; gagal ujian akademi berkali-kali; Mizuki menipu Naruto mencuri gulungan terlarang; Naruto belajar jurus Kage Bunshin; Iruka melindungi Naruto dan mengakuinya; Naruto menghajar Mizuki dengan ratusan bayangan; Iruka memberi ikat kepala, Naruto lulus.", "next": "Tim 7 & Ujian Lonceng"},
+  {"ep": 2, "title": "Tim 7 & Ujian Lonceng", "beats": "Naruto, Sasuke, Sakura satu tim; guru Kakashi telat dan malas; ujian merebut lonceng; Naruto diikat ke tiang; mereka berbagi bekal melanggar aturan; Kakashi meluluskan karena kerja sama.", "next": "Jembatan Negeri Ombak"}
+ ]
+}
