@@ -41,13 +41,32 @@ def gflow(*a, timeout=2400):
                           text=True, timeout=timeout + LOCK_WAIT, env=env)
 
 
+MAX_PROMPT = 1950  # gflow menolak prompt > 2000 karakter
+
+
 def scene_prompt(series, scene):
-    chars = [f"{k.replace('_', ' ')}: {series['characters'][k]}" for k in scene.get("tokoh", [])
-             if k in series["characters"]]
+    """Gaya + adegan + desain tokoh. Bila kepanjangan (banyak tokoh): desain tokoh dipersingkat ke ciri utama
+    (bagian sebelum koma pertama "wearing"), lalu tokoh ke-4 dst dibuang, terakhir adegan dipotong."""
+    keys = [k for k in scene.get("tokoh", []) if k in series["characters"]]
     visual = re.sub(r"\{(\w+)\}", lambda m: series["characters"].get(m.group(1), m.group(1)), scene["visual"])
-    # Satu baris per prompt (file prompt gflow: satu prompt per baris).
-    text = f"{series['style']} Scene: {visual}" + (f" Characters (keep exactly this design): {' | '.join(chars)}." if chars else "")
-    return " ".join(text.split())
+
+    def build(descs, vis):
+        chars = [f"{k.replace('_', ' ')}: {d}" for k, d in descs]
+        text = f"{series['style']} Scene: {vis}" + (
+            f" Characters (keep exactly this design): {' | '.join(chars)}." if chars else "")
+        return " ".join(text.split())  # satu baris per prompt (file prompt gflow)
+
+    full = [(k, series["characters"][k]) for k in keys]
+    text = build(full, visual)
+    if len(text) > MAX_PROMPT:
+        short = [(k, d.split(", wearing")[0].split(", carrying")[0]) for k, d in full]
+        text = build(short, visual)
+        if len(text) > MAX_PROMPT:
+            text = build(short[:3], visual)
+        if len(text) > MAX_PROMPT:
+            over = len(text) - MAX_PROMPT
+            text = build(short[:3], visual[: max(80, len(visual) - over - 5)].rsplit(" ", 1)[0])
+    return text[:MAX_PROMPT]
 
 
 def project_id(d, series_key):

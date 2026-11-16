@@ -1,0 +1,2 @@
+# Antrean seri yang diproduksi berurutan (satu key per baris = series/<key>.json)
+naruto
