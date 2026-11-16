@@ -15,10 +15,163 @@
   "warga": "grumpy chibi villagers in simple traditional Japanese-style clothes",
   "sasuke": "a cool brooding boy with spiky dark navy-black hair, wearing a dark blue high-collar shirt with white shorts and a blue headband with a metal plate",
   "sakura": "a cheerful girl with shoulder-length pink hair and a wide forehead, wearing a red sleeveless dress over dark shorts and a blue headband as a hair band",
-  "kakashi": "a lazy tall man with messy spiky silver hair slanted to one side, a dark mask covering his lower face, his headband tilted over his left eye, wearing a green flak vest, often reading a small orange book"
+  "kakashi": "a lazy tall man with messy spiky silver hair slanted to one side, a dark mask covering his lower face, his headband tilted over his left eye, wearing a green flak vest, often reading a small orange book",
+  "zabuza": "a tall scary rogue ninja with bandages covering his lower face, no eyebrows, carrying a gigantic butcher-knife sword on his back",
+  "haku": "a slender gentle young person with long dark hair, wearing a green kimono or a white hunter mask, holding needles",
+  "orochimaru": "a pale snake-like man with long straight black hair, yellow slit eyes and purple eye markings, long tongue",
+  "gaara": "a quiet boy with spiky dark red hair, dark rings around his eyes, a red love-kanji-like mark on his forehead, carrying a huge gourd of sand",
+  "rocklee": "an energetic boy with a shiny black bowl haircut, very thick eyebrows, green spandex jumpsuit and orange leg warmers",
+  "guy": "a muscular man with a shiny black bowl haircut, thick eyebrows, green spandex jumpsuit and green flak vest, flashing a thumbs up",
+  "neji": "a calm boy with long dark brown hair, pale lavender eyes without pupils, white robe",
+  "hinata": "a shy girl with dark blue-black hair, pale lavender eyes without pupils, a cream hooded jacket",
+  "jiraiya": "a big old man with long spiky white hair, red lines under his eyes, a horned headband, red vest and wooden sandals",
+  "tsunade": "a strong woman with long blonde pigtails, a purple diamond mark on her forehead, green robe",
+  "itachi": "a calm young man with long dark hair in a low ponytail, red eyes with black patterns, black cloak with red clouds",
+  "akatsuki": "a mysterious ninja wearing a long black cloak with red cloud patterns and a straw hat",
+  "pain": "a man with spiky orange hair, many metal piercings on his face, ringed purple eyes, black cloak with red clouds",
+  "kurama": "a gigantic orange fox with nine tails, same as the nine-tailed fox design but grumpy-friendly",
+  "obito": "a man with short spiky dark hair, scars on the right side of his face, one red patterned eye",
+  "madara": "a proud warrior with very long wild spiky dark hair, red armor, rippled purple eyes",
+  "gamabunta": "a gigantic orange-red toad with a scar over one eye, wearing a blue vest and holding a pipe"
  },
  "episodes": [
-  {"ep": 1, "title": "Bocah Rubah Ekor Sembilan", "beats": "Kyuubi menyerang Konoha; Hokage ke-4 (Minato) menyegel Kyuubi ke dalam bayi Naruto dan gugur; Naruto tumbuh sendirian, dikucilkan warga, jadi bocah iseng (mencoret patung wajah Hokage) yang bermimpi jadi Hokage; gagal ujian akademi berkali-kali; Mizuki menipu Naruto mencuri gulungan terlarang; Naruto belajar jurus Kage Bunshin; Iruka melindungi Naruto dan mengakuinya; Naruto menghajar Mizuki dengan ratusan bayangan; Iruka memberi ikat kepala, Naruto lulus.", "next": "Tim 7 & Ujian Lonceng"},
-  {"ep": 2, "title": "Tim 7 & Ujian Lonceng", "beats": "Naruto, Sasuke, Sakura satu tim; guru Kakashi telat dan malas; ujian merebut lonceng; Naruto diikat ke tiang; mereka berbagi bekal melanggar aturan; Kakashi meluluskan karena kerja sama.", "next": "Jembatan Negeri Ombak"}
+  {
+   "ep": 1,
+   "title": "Bocah Rubah Ekor Sembilan",
+   "beats": "Kyuubi menyerang Konoha; Hokage ke-4 (Minato) menyegel Kyuubi ke dalam bayi Naruto dan gugur; Naruto tumbuh sendirian, dikucilkan warga, jadi bocah iseng (mencoret patung wajah Hokage) yang bermimpi jadi Hokage; gagal ujian akademi berkali-kali; Mizuki menipu Naruto mencuri gulungan terlarang; Naruto belajar jurus Kage Bunshin; Iruka melindungi Naruto dan mengakuinya; Naruto menghajar Mizuki dengan ratusan bayangan; Iruka memberi ikat kepala, Naruto lulus.",
+   "next": "Tim 7 & Ujian Lonceng"
+  },
+  {
+   "ep": 2,
+   "title": "Tim 7 & Ujian Lonceng",
+   "beats": "Naruto, Sasuke, Sakura satu tim; guru Kakashi telat dan malas; ujian merebut lonceng; Naruto diikat ke tiang; mereka berbagi bekal melanggar aturan; Kakashi meluluskan karena kerja sama.",
+   "next": "Jembatan Negeri Ombak"
+  },
+  {
+   "ep": 3,
+   "title": "Jembatan Negeri Ombak",
+   "beats": "Misi mengawal tukang jembatan Tazuna ke Negeri Ombak; ninja pelarian Zabuza dan anak buahnya Haku; Kakashi terjebak penjara air; Sasuke membangkitkan Sharingan saat melindungi Naruto; Naruto mengamuk dengan chakra rubah; Haku mengorbankan diri melindungi Zabuza; Zabuza menangis dan gugur di samping Haku; jembatan dinamai Jembatan Naruto Agung.",
+   "next": "Hutan Kematian"
+  },
+  {
+   "ep": 4,
+   "title": "Hutan Kematian",
+   "beats": "Ujian Chunin dimulai; ujian tulis dengan soal mustahil dan pertanyaan kesepuluh; masuk Hutan Kematian berebut gulungan; Orochimaru menyamar dan menggigit leher Sasuke memberi segel kutukan; Sakura memotong rambut untuk melindungi teman; Sasuke bangun dengan kekuatan segel kutukan.",
+   "next": "Lee vs Gaara"
+  },
+  {
+   "ep": 5,
+   "title": "Lee vs Gaara",
+   "beats": "Babak penyisihan Ujian Chunin; Naruto mengalahkan Kiba dengan kentut dan bayangan; Neji menghajar Hinata yang tidak menyerah; Rock Lee yang tidak bisa ninjutsu melepas pemberat kaki dan membuka gerbang chakra melawan pasir Gaara; Gaara meremukkan tangan dan kaki Lee; Guru Guy menghentikan pertarungan.",
+   "next": "Mengalahkan Takdir"
+  },
+  {
+   "ep": 6,
+   "title": "Mengalahkan Takdir",
+   "beats": "Naruto berlatih dengan Jiraiya si pertapa mesum dan memanggil katak raksasa Gamabunta; final Ujian Chunin Naruto melawan Neji yang percaya takdir; kisah klan Hyuga; Naruto keluar dari tanah dengan pukulan kejutan; Neji kalah dan berubah.",
+   "next": "Invasi Konoha"
+  },
+  {
+   "ep": 7,
+   "title": "Invasi Konoha",
+   "beats": "Sasuke melawan Gaara; Suna dan Otogakure menyerang Konoha; Hokage Ketiga melawan Orochimaru di atas atap dalam penghalang ungu; jurus segel kematian mengambil tangan Orochimaru, Hokage Ketiga gugur; Naruto melawan Gaara, Gamabunta melawan Shukaku; Naruto menyadarkan Gaara tentang kesepian; pemakaman Hokage Ketiga di bawah hujan.",
+   "next": "Rasengan & Itachi"
+  },
+  {
+   "ep": 8,
+   "title": "Rasengan dan Itachi",
+   "beats": "Itachi dan Kisame dari Akatsuki datang mencari Naruto; Sasuke menyerang kakaknya dan dikalahkan dengan Tsukuyomi; Naruto dan Jiraiya mencari Tsunade si penjudi; Naruto belajar Rasengan dengan balon air dan bola karet; Tsunade bertaruh kalung; Naruto mengalahkan Kabuto dengan Rasengan; Tsunade jadi Hokage Kelima.",
+   "next": "Lembah Akhir"
+  },
+  {
+   "ep": 9,
+   "title": "Lembah Akhir",
+   "beats": "Sasuke iri pada kemajuan Naruto; empat ninja suara mengajak Sasuke ke Orochimaru; Sasuke pergi meninggalkan Sakura di bangku; tim Shikamaru mengejar, tiap anggota bertarung satu lawan satu; Naruto melawan Sasuke di Lembah Akhir di antara patung Hashirama dan Madara; Rasengan bertemu Chidori; Sasuke menang dan pergi; Naruto berjanji membawa Sasuke pulang lalu pergi berlatih dengan Jiraiya.",
+   "next": "Kembalinya Naruto"
+  },
+  {
+   "ep": 10,
+   "title": "Kembalinya Naruto",
+   "beats": "Dua setengah tahun kemudian Naruto pulang lebih tinggi; Gaara kini Kazekage diculik Deidara dari Akatsuki; Sakura dan nenek Chiyo melawan Sasori dan boneka-bonekanya; Akatsuki mengekstrak Shukaku dari Gaara; Gaara meninggal lalu Chiyo mengorbankan nyawanya menghidupkan Gaara.",
+   "next": "Tim Baru"
+  },
+  {
+   "ep": 11,
+   "title": "Tim Baru",
+   "beats": "Kakashi sakit, tim tujuh diisi Sai yang tidak punya perasaan dan kapten Yamato; menyusup ke markas Orochimaru; Naruto mengamuk dalam mode empat ekor sampai melukai Sakura; Sai berubah dan jadi teman; mereka akhirnya bertemu Sasuke yang dingin dan mengalahkan mereka dengan mudah.",
+   "next": "Balas Dendam Shikamaru"
+  },
+  {
+   "ep": 12,
+   "title": "Balas Dendam Shikamaru",
+   "beats": "Hidan yang abadi dan Kakuzu dengan lima jantung memburu ninja; Asuma gugur dan menitipkan pesan raja pada Shikamaru; Shikamaru menjebak Hidan dan menguburnya hidup-hidup; Naruto menciptakan Rasen-shuriken dan mengalahkan Kakuzu.",
+   "next": "Ular Kalah oleh Elang"
+  },
+  {
+   "ep": 13,
+   "title": "Ular Kalah oleh Elang",
+   "beats": "Sasuke mengalahkan Orochimaru yang mencoba merebut tubuhnya; Sasuke membentuk tim Hebi bersama Suigetsu, Karin, dan Juugo; Deidara menantang Sasuke dan meledakkan dirinya dengan bom pamungkas; Sasuke selamat dengan ular pemanggil.",
+   "next": "Kakak Beradik Uchiha"
+  },
+  {
+   "ep": 14,
+   "title": "Kakak Beradik Uchiha",
+   "beats": "Pertarungan Sasuke melawan Itachi; api hitam Amaterasu, Susanoo, dan pedang Totsuka; Itachi menyentuh dahi Sasuke lalu tewas sambil tersenyum; Tobi mengungkap kebenaran: Itachi membantai klan atas perintah desa demi melindungi Sasuke; Sasuke menangis dan bersumpah menghancurkan Konoha.",
+   "next": "Kisah Sang Guru"
+  },
+  {
+   "ep": 15,
+   "title": "Kisah Sang Guru",
+   "beats": "Jiraiya menyusup ke Desa Hujan dan menghadapi Pain, mantan muridnya; Jiraiya memakai mode pertapa dengan dua katak tua; enam jalan Pain mengeroyok; Jiraiya menemukan rahasia Pain lalu tenggelam ke dasar danau; Naruto berduka dan mewarisi cerita gurunya.",
+   "next": "Konoha Hancur"
+  },
+  {
+   "ep": 16,
+   "title": "Konoha Hancur",
+   "beats": "Naruto berlatih mode pertapa di Gunung Myoboku; Pain menyerang Konoha dan meratakan desa dengan satu jurus; Kakashi gugur sementara; Naruto datang dengan Gamabunta dan mode pertapa mengalahkan jalan-jalan Pain; Hinata menyatakan cinta dan ditusuk; Naruto berubah delapan ekor; bayangan ayahnya, Hokage Keempat, muncul dan memperbaiki segel.",
+   "next": "Rasa Sakit dan Perdamaian"
+  },
+  {
+   "ep": 17,
+   "title": "Rasa Sakit dan Perdamaian",
+   "beats": "Naruto mengalahkan Pain terakhir; menemui Nagato yang asli dan berbicara tentang kebencian dan perdamaian; Nagato menghidupkan kembali semua korban desa lalu meninggal; Naruto disambut warga sebagai pahlawan Konoha.",
+   "next": "Menjinakkan Kurama"
+  },
+  {
+   "ep": 18,
+   "title": "Menjinakkan Kurama",
+   "beats": "Naruto berlatih di pulau kura-kura raksasa bersama Killer Bee si rapper delapan ekor; Air Terjun Kebenaran memunculkan Naruto gelap; Naruto bertemu ibunya Kushina di dalam segel; melawan dan merebut chakra Kurama; mode chakra kurama berwarna emas.",
+   "next": "Perang Dunia Shinobi"
+  },
+  {
+   "ep": 19,
+   "title": "Perang Dunia Shinobi",
+   "beats": "Perang Dunia Shinobi Keempat; aliansi lima negara; Kabuto membangkitkan ninja mati dengan Edo Tensei termasuk Itachi; Madara asli bangkit dan menghancurkan lima Kage; Neji mengorbankan diri melindungi Naruto dan Hinata.",
+   "next": "Topeng Terbuka"
+  },
+  {
+   "ep": 20,
+   "title": "Topeng Terbuka",
+   "beats": "Topeng Tobi pecah: dia Obito, teman Kakashi yang dikira mati; Obito menjadi jinchuriki Juubi; Sasuke membangkitkan empat Hokage terdahulu dan memutuskan melindungi desa; Tim Tujuh bertarung bersama lagi; Naruto menyadarkan Obito.",
+   "next": "Gerbang Kedelapan dan Kaguya"
+  },
+  {
+   "ep": 21,
+   "title": "Gerbang Kedelapan dan Kaguya",
+   "beats": "Madara menyerap Juubi; Guru Guy membuka Gerbang Kedelapan dan menendang Madara dengan Night Guy; Madara mengaktifkan Tsukuyomi Tak Terbatas yang menidurkan dunia; Kaguya sang dewi kelinci muncul; Tim Tujuh menyegel Kaguya.",
+   "next": "Pertarungan Terakhir"
+  },
+  {
+   "ep": 22,
+   "title": "Pertarungan Terakhir",
+   "beats": "Sasuke ingin membunuh semua Kage dan memimpin dunia sendirian; Naruto dan Sasuke bertarung terakhir di Lembah Akhir; Rasengan raksasa melawan Chidori hitam; masing-masing kehilangan satu tangan; Sasuke akhirnya mengaku kalah dan menangis; mereka melepas Tsukuyomi Tak Terbatas.",
+   "next": "Hokage Ketujuh"
+  },
+  {
+   "ep": 23,
+   "title": "Hokage Ketujuh",
+   "beats": "Sasuke berkelana menebus dosa; Naruto dan Hinata menikah; Naruto menjadi Hokage Ketujuh dengan wajahnya di tebing; punya anak Boruto yang mencoret wajah Hokage seperti ayahnya dulu; penutup seri dan terima kasih kepada penonton.",
+   "next": null
+  }
  ]
 }
