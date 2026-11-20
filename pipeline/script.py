@@ -15,6 +15,8 @@ momen ikoniknya tetap setia pada cerita asli. Narator bercerita (bukan dialog pa
 Aturan narasi:
 - Total 430–480 kata (±200 detik dibacakan). 18–22 adegan, tiap adegan 15–30 kata.
 - Adegan 1 = HOOK 3 detik: kalimat paling bikin penasaran/lucu dari episode ini (bukan salam, bukan judul).
+- "hook_layar" = teks besar di layar pada detik pertama (kebanyakan orang menonton tanpa suara): maks. 6 kata,
+  janji yang sama dengan adegan 1, boleh diakhiri "?!" (contoh: "MENANG BERANTEM GARA-GARA KENTUT?!").
 - Adegan terakhir = cliffhanger + ajakan: sebut part berikutnya "{next}" dan ajak follow agar tidak ketinggalan.
 - Bahasa lisan yang enak dibacakan suara TTS: kalimat pendek, tanpa emoji, tanpa singkatan aneh, angka ditulis kata.
 - Jangan menyalin dialog/terjemahan resmi panjang; ceritakan dengan kata-katamu sendiri.
@@ -26,7 +28,8 @@ Aturan visual (untuk generator gambar, bahasa Inggris):
 - Sebut latar dan suasana singkat. Jangan minta teks/tulisan di gambar.
 
 Balas HANYA JSON:
-{{"judul": "...", "caption": "caption Facebook 2-3 kalimat lucu + ajakan follow", "hashtags": ["..."],
+{{"judul": "...", "hook_layar": "...", "caption": "caption Facebook 2-3 kalimat lucu + satu ajakan follow",
+  "hashtags": ["maks. 5 tag spesifik: anime, tokoh/momen episode, seri; tanpa tag generik seperti Reels/fyp/viral"],
   "adegan": [{{"narasi": "...", "visual": "...", "tokoh": ["kunci", ...], "suasana": "normal|lucu|tegang|kaget|sedih|semangat"}}]}}"""
 
 
@@ -41,6 +44,9 @@ def main(series_key, ep):
     out = claude_json("sonnet", sys_prompt, user)
     words = sum(len(a["narasi"].split()) for a in out["adegan"])
     bad = [k for a in out["adegan"] for k in a.get("tokoh", []) if k not in s["characters"]]
+    hook_words = len(out.get("hook_layar", "").split())
+    if hook_words > 6:
+        log(f"hook_layar {hook_words} kata (> 6): {out['hook_layar']}")
     log(f"naskah: {len(out['adegan'])} adegan, {words} kata" + (f", kunci tokoh tak dikenal: {set(bad)}" if bad else ""))
     out.update(series=series_key, ep=int(ep), part_title=e["title"])
     save(d / "script.json", out)

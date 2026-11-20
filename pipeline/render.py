@@ -41,6 +41,8 @@ Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour,
 Style: Sub,{SUB_FONT},150,&H00FFFFFF,&H00FFFFFF,&H00141414,&H64000000,0,0,0,0,100,100,1,0,1,9,4,2,70,70,560,1
 Style: Title,{SUB_FONT},250,&H0000E1FF,&H00FFFFFF,&H00141414,&H64000000,0,0,0,0,100,100,2,0,1,9,4,8,60,60,250,1
 Style: Part,{SUB_FONT},130,&H00FFFFFF,&H00FFFFFF,&H00141414,&H64000000,0,0,0,0,100,100,2,0,1,9,4,8,60,60,470,1
+Style: Label,{SUB_FONT},90,&H00FFFFFF,&H00FFFFFF,&H00141414,&H64000000,0,0,0,0,100,100,2,0,1,7,3,8,90,230,250,1
+Style: Hook,{SUB_FONT},165,&H0000E1FF,&H00FFFFFF,&H00141414,&H64000000,0,0,0,0,100,100,1,0,1,10,5,8,90,230,380,1
 
 [Events]
 Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
@@ -48,8 +50,16 @@ Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
     ev = []
     # judul seri (awal) & kartu part berikutnya (akhir)
     fade = r"{\fad(250,250)}"
-    ev.append(f"Dialogue: 1,{ass_time(0.2)},{ass_time(3.8)},Title,,0,0,0,,{fade}{ass_escape(series['title'])}")
-    ev.append(f"Dialogue: 1,{ass_time(0.2)},{ass_time(3.8)},Part,,0,0,0,,{fade}DALAM 200 DETIK - PART {sc['ep']}")
+    hook = (sc.get("hook_layar") or "").strip()
+    if hook:  # hook di layar sejak frame pertama (tanpa fade masuk); judul seri jadi label kecil di atasnya
+        until = max(3.5, min(5.0, tts["scenes"][0]["dur"] + 0.3))
+        out = r"{\fad(0,250)}"
+        ev.append(f"Dialogue: 1,{ass_time(0)},{ass_time(until)},Label,,0,0,0,,{out}"
+                  f"{ass_escape(series['title']).upper()} · PART {sc['ep']}")
+        ev.append(f"Dialogue: 1,{ass_time(0)},{ass_time(until)},Hook,,0,0,0,,{out}{ass_escape(hook).upper()}")
+    else:  # naskah lama tanpa hook_layar
+        ev.append(f"Dialogue: 1,{ass_time(0.2)},{ass_time(3.8)},Title,,0,0,0,,{fade}{ass_escape(series['title'])}")
+        ev.append(f"Dialogue: 1,{ass_time(0.2)},{ass_time(3.8)},Part,,0,0,0,,{fade}DALAM 200 DETIK - PART {sc['ep']}")
     nxt = next((e.get("next") for e in series["episodes"] if e["ep"] == sc["ep"]), None)
     if nxt:
         t0 = max(0.0, total - 6.0)
@@ -94,6 +104,20 @@ def segment(img, seconds, out, seed):
           "format=yuv420p")
     ffmpeg("-loop", "1", "-i", img, "-vf", vf, "-frames:v", frames, "-c:v", "libx264", "-preset", "veryfast",
            "-crf", "20", "-threads", "4", out)
+
+
+FILLER_TAGS = {"reels", "reelsinstagram", "fyp", "foryou", "foryoupage", "viral", "viralreels", "explore",
+               "explorepage", "trending", "otaku", "instagood"}
+
+
+def hashtags(tags, limit=5):
+    """Maks. 5 tag spesifik (batas Instagram sejak Des 2025; tag generik tidak menambah jangkauan)."""
+    out = []
+    for h in tags:
+        h = h.lstrip("#").replace(" ", "")
+        if h and h.lower() not in FILLER_TAGS and h.lower() not in {o.lower() for o in out}:
+            out.append(h)
+    return ["#" + h for h in out[:limit]]
 
 
 def pick_music(mood, seed):
@@ -150,8 +174,7 @@ def main(series_key, ep):
            "-c:v", "libx264", "-preset", "medium", "-crf", "21", "-profile:v", "high", "-pix_fmt", "yuv420p",
            "-r", FPS, "-c:a", "aac", "-b:a", "160k", "-movflags", "+faststart", d / "final.mp4")
     credit = f'Musik: "{track["title"]}" - Kevin MacLeod (incompetech.com), CC BY 4.0'
-    caption = f"{sc['judul']}\n\n{sc['caption']}\n\n🎵 {credit}\n\n" + " ".join(
-        "#" + h.lstrip("#").replace(" ", "") for h in sc.get("hashtags", []))
+    caption = f"{sc['judul']}\n\n{sc['caption']}\n\n🎵 {credit}\n\n" + " ".join(hashtags(sc.get("hashtags", [])))
     (d / "caption.txt").write_text(caption)
     log(f"selesai: {d / 'final.mp4'} ({ffprobe_seconds(d / 'final.mp4'):.1f} detik), caption: {d / 'caption.txt'}")
 
