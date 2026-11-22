@@ -14,7 +14,7 @@ from common import *
 
 VOICE = "id-ID-ArdiNeural"
 # suasana -> (rate, pitch, volume)
-DELIVERY = {  # tempo sedikit dipercepat agar ±420 kata muat ±200 detik, tetap tenang untuk narasi serius
+DELIVERY = {  # tempo sedikit dipercepat agar ±465 kata muat ±200 detik, tetap tenang untuk narasi serius
     "normal": ("+10%", "+0Hz", "+0%"),
     "semangat": ("+16%", "+2Hz", "+6%"),
     "tegang": ("+6%", "-3Hz", "-2%"),

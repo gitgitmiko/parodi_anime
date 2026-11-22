@@ -10,7 +10,7 @@ subtitle, judul, kartu part berikutnya, dan lagu latar.
 
 | Tahap | Alat | Keterangan |
 |---|---|---|
-| `pipeline/script.py` | Claude Code CLI (`claude -p`, sonnet) | 18–22 adegan, 400–440 kata, nada serius + 3–4 kalimat analisis, hook di adegan 1, cliffhanger ke part berikutnya |
+| `pipeline/script.py` | Claude Code CLI (`claude -p`, sonnet) | 18–22 adegan, 450–480 kata, nada serius + 3–4 kalimat analisis, hook di adegan 1, cliffhanger ke part berikutnya |
 | `pipeline/images.py` | gflow-cli (Google Flow / Nano Banana), 9:16 | gaya & desain tokoh dari `series/<seri>.json`; bisa dilanjutkan; kunci bersama `/tmp/gflow-profile.lock`, Xvfb `:99`, mode classic |
 | `pipeline/tts.py` | edge-tts `id-ID-ArdiNeural` | tempo/nada per suasana adegan, waktu per kata untuk subtitle |
 | `pipeline/render.py` | ffmpeg (zoompan, xfade, libass) | gerak kamera pelan, subtitle 3 kata dengan kata aktif kuning, judul & kartu part berikutnya, lagu Kevin MacLeod (CC BY 4.0) yang mengecil saat narator bicara |

@@ -16,7 +16,7 @@ selanjutnya. Narator bercerita (bukan dialog panjang); boleh kutipan pendek toko
 Aturan narasi:
 - Nada serius, hangat, dan menghormati cerita. TANPA lelucon, plesetan, komentar jenaka, atau humor lokal.
   Momen yang di cerita aslinya konyol tetap boleh disebut, tetapi ceritakan apa adanya dan fokus pada maknanya.
-- Total 400–440 kata (±200 detik dibacakan). 18–22 adegan, tiap adegan 15–28 kata.
+- Total 450–480 kata (±200 detik dibacakan). 18–22 adegan, tiap adegan 18–30 kata.
 - Sisipkan 3–4 kalimat analisis di sela alur (mis. "Di sinilah terlihat bahwa...", "Yang jarang disadari...",
   "Momen ini penting karena..."), jangan dikumpulkan di akhir dan jangan mengulang frasa pembuka yang sama.
 - Adegan 1 = HOOK 3 detik: pertanyaan atau fakta paling menggugah dari episode ini (bukan salam, bukan judul).
