@@ -1,7 +1,7 @@
 # parodi-anime
 
 Seri ringkasan anime serius untuk Reels Facebook/Instagram (9:16, ±200 detik per part), dibuat otomatis:
-naskah dramatis + analisis berbahasa Indonesia → gambar adegan bergaya chibi sendiri → narasi suara → video lengkap dengan
+naskah dramatis + analisis berbahasa Indonesia → gambar adegan bergaya chibi serius sendiri → narasi suara → video lengkap dengan
 subtitle, judul, kartu part berikutnya, dan lagu latar.
 
 ```
@@ -23,7 +23,7 @@ Seri = `series/<key>.json`: `style` (gaya visual — **gaya sendiri**, jangan me
 - Gambar & suara 100% dibuat sendiri: tanpa cuplikan anime, OST, suara asli, logo/poster resmi.
 - Nama tokoh & alur cerita dipakai sebagai ringkasan; analisis (motivasi tokoh, makna, lore, foreshadowing) dan
   sudut pandang sendiri adalah nilai aslinya, jadi jangan sekadar menceritakan ulang.
-- Naruto part 1–11 memakai narasi parodi lama; mulai part 12 narasi serius (gaya gambar chibi tetap sama).
+- Naruto part 1–11 memakai narasi parodi lama; mulai part 12 narasi serius dengan gaya chibi serius (mata besar, pencahayaan sinematik).
 - Kredit lagu wajib di caption (sudah otomatis di `caption.txt`).
 
 ## Biaya per episode

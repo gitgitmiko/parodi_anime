@@ -48,6 +48,8 @@ def main(series_key, ep):
     user = (f"Anime: {s['title']}\nPart {e['ep']}: {e['title']}\nMomen yang wajib ada (urut): {e['beats']}\n"
             f"Part berikutnya: {e.get('next')}")
     out = claude_json("sonnet", sys_prompt, user)
+    for a in out["adegan"]:  # model kadang menulis kunci tokoh dengan kurung kurawal: "{naruto}"
+        a["tokoh"] = [k.strip("{} ") for k in a.get("tokoh", [])]
     words = sum(len(a["narasi"].split()) for a in out["adegan"])
     bad = [k for a in out["adegan"] for k in a.get("tokoh", []) if k not in s["characters"]]
     hook_words = len(out.get("hook_layar", "").split())
