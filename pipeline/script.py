@@ -27,7 +27,7 @@ Aturan narasi:
 - Jangan menyalin dialog/terjemahan resmi panjang; ceritakan dengan kata-katamu sendiri.
 
 Aturan visual (untuk generator gambar, bahasa Inggris):
-- Satu adegan = satu gambar diam sinematik yang jelas, fokus pada 1–3 tokoh, ekspresi dan pose serius/emosional,
+- Satu adegan = satu gambar diam yang jelas, fokus pada 1–3 tokoh, ekspresi dan pose serius/emosional,
   sebut sudut kamera dan pencahayaan singkat.
 - JANGAN tulis nama tokoh atau judul anime. Rujuk tokoh HANYA dengan kunci di kurung kurawal dari daftar ini:
   {chars}. Tokoh lain: deskripsikan secara umum.
