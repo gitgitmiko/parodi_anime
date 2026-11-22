@@ -14,13 +14,12 @@ from common import *
 
 VOICE = "id-ID-ArdiNeural"
 # suasana -> (rate, pitch, volume)
-DELIVERY = {  # tempo dasar dipercepat: gaya cerita lucu ±200 detik untuk ±470 kata
-    "normal": ("+18%", "+0Hz", "+0%"),
-    "lucu": ("+22%", "+3Hz", "+4%"),
-    "semangat": ("+24%", "+4Hz", "+8%"),
-    "tegang": ("+10%", "-3Hz", "-2%"),
-    "kaget": ("+26%", "+5Hz", "+10%"),
-    "sedih": ("+6%", "-4Hz", "-6%"),
+DELIVERY = {  # tempo sedikit dipercepat agar ±420 kata muat ±200 detik, tetap tenang untuk narasi serius
+    "normal": ("+10%", "+0Hz", "+0%"),
+    "semangat": ("+16%", "+2Hz", "+6%"),
+    "tegang": ("+6%", "-3Hz", "-2%"),
+    "kaget": ("+14%", "+2Hz", "+6%"),
+    "sedih": ("+0%", "-4Hz", "-6%"),
 }
 # Kata asing/istilah yang salah dibaca suara Indonesia; hanya suara yang melihat ejaan ini, subtitle tetap asli.
 SAY = {"Kyuubi": "Kyubi", "Hokage": "Hokage", "Konoha": "Konoha", "Kage Bunshin": "Kage Bunsyin", "kunai": "kunai",
